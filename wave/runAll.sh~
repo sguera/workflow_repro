@@ -87,7 +87,7 @@ while [ "$1" != "" ]; do
 	                        ;;
 
         -h | --help )           echo "$usage"
-                                exit 1
+                                exit
                                 ;;
 
         all | All )             fnCompileRunNaive
@@ -99,7 +99,7 @@ while [ "$1" != "" ]; do
                                 ;;
 
         * )                     echo "$usage"
-                                exit 1
+                                exit
                                 ;;
     esac
     shift

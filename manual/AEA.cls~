@@ -643,7 +643,7 @@
 \long\gdef\@pubYear{2014}
 \long\def\pubYear#1{\long\gdef\@pubYear{#1}}
 
-\long\gdef\@pubMonth{June}
+\long\gdef\@pubMonth{March}
 \long\def\pubMonth#1{\long\gdef\@pubMonth{#1}}
 
 \long\gdef\@pubVolume{Volume}

@@ -50,7 +50,7 @@ while [ "$1" != "" ]; do
                                 ;;
 
         -h | --help )           echo "$usage"
-                                exit 1
+                                exit
                                 ;;
 
         all | All )             fnInstall patus
@@ -60,9 +60,11 @@ while [ "$1" != "" ]; do
                                 exit 1
                                 ;;
 
-        * )                     echo "$usage"
+        * )                     fnInstall patus
+                                fnInstall pochoir
+                                fnInstall pluto
+                                fnInstall halide
                                 exit 1
-								;;
     esac
     shift
 done

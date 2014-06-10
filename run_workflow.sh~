@@ -9,7 +9,7 @@ export PLOT_OUT=results_$NOW.png
 echo $PLOT_OUT
 #Set up the environment
 cd $dir
-source SetupEnv.sh
+source SetupEnv
 
 intel_arch='ia32'
 if [ `uname -m` = "x86_64" ]; then
