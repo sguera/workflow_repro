@@ -1,0 +1,149 @@
+#ifndef __PERFSTATS_H__
+#define __PERFSTATS_H__
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <sys/time.h>
+
+#include "cycle.h"
+
+
+/**
+ * Class used to collect performance statistics.
+ * A PerfStats object is initialized with the number of Flops of the computations,
+ * and timinig is started and stopped with the tic and toc methods, respectively.
+ * print prints the collected measurements to an output stream.
+ *
+ *
+ * Usage:
+ * -------------------------------------------------------------------------------
+ *
+ * PerfStats ps (nFlopsCount);  // where the variable nFlopsCount contains the
+ *                              // number of floating point operations performed
+ *                              // by the computation to benchmark
+ * ps.tic ();
+ * ...                          // do computation
+ * ps.toc ();
+ * ps.print (std::cout);
+ *
+ * -------------------------------------------------------------------------------
+ *
+ * @author Matthias-M. Christen
+ */
+class PerfStats
+{
+private:
+
+	long m_nFlopsCount;
+	
+	double m_fStartTime;
+	double m_fStopTime;
+	
+	ticks m_tickStart;
+	ticks m_tickEnd;
+
+
+public:
+
+	PerfStats (long nFlopsCount)
+		:
+		m_nFlopsCount (nFlopsCount),
+		m_fStartTime (0.0),
+		m_fStopTime (0.0)
+	{
+	}
+	
+	/**
+	 * Starts the timer.
+	 */
+	inline void tic ()
+	{
+		m_fStartTime = now ();
+		m_tickStart = getticks ();
+	}
+	
+	/**
+	 * Stops the timer.
+	 */
+	inline void toc ()
+	{
+		m_fStopTime = now ();
+		m_tickEnd = getticks ();
+	}
+	
+	/**
+	 * Prints the performance statistics to the std::ostream out.
+	 */
+	void print (std::ostream& out) const
+	{
+		if (m_fStartTime == 0.0)
+		{
+			out << "Measurement not started. Call 'tic' first.\n";
+			return;
+		}
+		
+		if (m_fStopTime == 0.0)
+		{
+			out << "Measurement not stopped. Call 'toc' first.\n";
+			return;
+		}
+		
+		out << "Number of flops: " << m_nFlopsCount << "\n";
+		
+		char chPrefix;
+		double fTimeUsed = prefix (m_fStopTime - m_fStartTime, chPrefix);
+		out << "Time used:       " << fTimeUsed << " " << chPrefix << "s" << "\n";
+		//double fPerformance = prefix (m_nFlopsCount / (m_fStopTime - m_fStartTime),chPrefix);
+		double fPerformance = (m_nFlopsCount / (m_fStopTime - m_fStartTime))*1e-9;
+		chPrefix='G';
+		out << "Performance in " << chPrefix << "Flop/s:\t" << fPerformance << "\n";
+		
+		out << std::setprecision (12) << elapsed (m_tickEnd, m_tickStart) << "\n";
+	}
+	
+
+private:
+
+	double now ()
+	{
+#ifdef CLOCK_REALTIME
+		struct timespec t;
+		clock_gettime (CLOCK_REALTIME, &t);
+		return t.tv_sec + t.tv_nsec * 1e-9;
+#else
+		struct timeval t;
+		gettimeofday (&t, NULL);
+		return t.tv_sec + t.tv_usec * 1e-6;
+#endif
+	}
+	
+	double prefix (double fNumber, char& chPrefix) const
+	{
+		const char szPrefixes[] = "yzafpnum kMGTPEZ";
+		for (int nIdx = 0; nIdx <= 15; nIdx++)
+		{
+			int nExponent = nIdx * 3 - 24;
+			double fLimit = pow (10, nExponent);
+			if (fabs (fNumber) < fLimit * 1000)
+			{
+				chPrefix = szPrefixes[nIdx];
+				return fNumber / fLimit;
+			}
+		}
+		
+		chPrefix = 'Y';
+		return fNumber * 1e-24;
+	}
+};
+
+
+std::ostream& operator<< (std::ostream& out, const PerfStats& ps)
+{
+	ps.print (out);
+	return out;
+}
+
+
+
+#endif

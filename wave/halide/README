@@ -1,0 +1,2 @@
+Had to esport the following before running Halide
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$BENCHROOT/StencilCompilers/Halide/halide/bin

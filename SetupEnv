@@ -1,0 +1,3 @@
+export BENCHROOT=`pwd`
+export NTHREADS='1 2 4 8 16 32'
+export DIM='200 200 200'

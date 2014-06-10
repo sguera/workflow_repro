@@ -1,0 +1,24 @@
+#!/bin/bash
+
+dir=`pwd`
+echo $dir
+if [ -e "$dir/src/wave" ]; then
+echo "filefound";
+fi
+
+for prog in wave
+do
+for t in 1 2 4 8 16
+do
+    FILE="$dir/../output/output-$prog-$t.out"
+	export HL_NUMTHREADS=$t
+	echo "------------- $t Threads ------------" >$FILE
+	for i in 1 2 3 4 5
+	do
+	    $dir/../src/wave >>$FILE
+	    echo >>$FILE
+	done
+	echo
+	echo
+done
+done

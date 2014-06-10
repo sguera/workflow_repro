@@ -1,0 +1,19 @@
+32
+------------- 32 Threads ------------
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 1.702005
+Performance in GFlop/s:     7.520541
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 1.899212
+Performance in GFlop/s:     6.739638
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 1.677803
+Performance in GFlop/s:     7.629024
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 1.443596
+Performance in GFlop/s:     8.866747
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 1.982628
+Performance in GFlop/s:     6.456078
+
+

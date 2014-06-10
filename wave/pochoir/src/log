@@ -1,0 +1,629 @@
+wave_pochoir.cpp(1487): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) feof_unlocked (FILE *__stream) throw ()
+                  ^
+
+wave_pochoir.cpp(1494): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) ferror_unlocked (FILE *__stream) throw ()
+                  ^
+
+wave_pochoir.cpp(1935): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) btowc (int __c) throw ()
+                  ^
+
+wave_pochoir.cpp(1941): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) wctob (wint_t __wc) throw ()
+                  ^
+
+wave_pochoir.cpp(1946): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) mbrlen (__const char *__restrict __s, size_t __n, mbstate_t *__restrict __ps) throw ()
+                  ^
+
+wave_pochoir.cpp(2436): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::wcstof;
+          ^
+
+wave_pochoir.cpp(2437): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::vfwscanf;
+          ^
+
+wave_pochoir.cpp(2438): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::vswscanf;
+          ^
+
+wave_pochoir.cpp(2439): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::vwscanf;
+          ^
+
+wave_pochoir.cpp(2441): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::wcstold;
+          ^
+
+wave_pochoir.cpp(2442): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::wcstoll;
+          ^
+
+wave_pochoir.cpp(2443): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::wcstoull;
+          ^
+
+wave_pochoir.cpp(10645): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) pthread_equal (pthread_t __thread1, pthread_t __thread2) throw ()
+                  ^
+
+wave_pochoir.cpp(16518): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) atof (__const char *__nptr) throw ()
+                  ^
+
+wave_pochoir.cpp(16523): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) atoi (__const char *__nptr) throw ()
+                  ^
+
+wave_pochoir.cpp(16528): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) atol (__const char *__nptr) throw ()
+                  ^
+
+wave_pochoir.cpp(16536): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) atoll (__const char *__nptr) throw ()
+                  ^
+
+wave_pochoir.cpp(16960): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) gnu_dev_major (unsigned long long int __dev) throw ()
+                  ^
+
+wave_pochoir.cpp(16966): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) gnu_dev_minor (unsigned long long int __dev) throw ()
+                  ^
+
+wave_pochoir.cpp(16972): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) gnu_dev_makedev (unsigned int __major, unsigned int __minor) throw ()
+                  ^
+
+wave_pochoir.cpp(17712): warning #780: using-declaration ignored -- it refers to the current namespace
+  using std::lldiv_t;
+        ^
+
+wave_pochoir.cpp(17715): warning #780: using-declaration ignored -- it refers to the current namespace
+  using std::llabs;
+        ^
+
+wave_pochoir.cpp(17716): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::lldiv;
+          ^
+
+wave_pochoir.cpp(17718): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::atoll;
+          ^
+
+wave_pochoir.cpp(17719): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::strtoll;
+          ^
+
+wave_pochoir.cpp(17720): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::strtoull;
+          ^
+
+wave_pochoir.cpp(17722): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::strtof;
+          ^
+
+wave_pochoir.cpp(17723): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::strtold;
+          ^
+
+wave_pochoir.cpp(17726): warning #780: using-declaration ignored -- it refers to the current namespace
+  using std::abs;
+        ^
+
+wave_pochoir.cpp(17727): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::div;
+          ^
+
+wave_pochoir.cpp(22004): warning #780: using-declaration ignored -- it refers to the current namespace
+    using std::iswblank;
+          ^
+
+wave_pochoir.cpp(30182): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) __signbitf (float __x) throw ()
+                  ^
+
+wave_pochoir.cpp(30189): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) __signbit (double __x) throw ()
+                  ^
+
+wave_pochoir.cpp(30196): warning #1292: unknown attribute "__leaf__"
+  __attribute__ ((__leaf__)) __signbitl (long double __x) throw ()
+                  ^
+
+wave_pochoir.cpp(35886): warning #945: type qualifier ignored
+      ((const _Tp&) > (const _Tp&) ? (const _Tp&) : (const _Tp&));
+        ^
+
+wave_pochoir.cpp(35886): error: expected a ")"
+      ((const _Tp&) > (const _Tp&) ? (const _Tp&) : (const _Tp&));
+                 ^
+
+wave_pochoir.cpp(35886): error: expected a ")"
+      ((const _Tp&) > (const _Tp&) ? (const _Tp&) : (const _Tp&));
+                    ^
+
+wave_pochoir.cpp(35886): error: "_Tp" is not a function or static data member
+      ((const _Tp&) > (const _Tp&) ? (const _Tp&) : (const _Tp&));
+              ^
+
+wave_pochoir.cpp(35890): warning #945: type qualifier ignored
+      ((const _Tp&) > (const _Tp&) ? (const _Tp&) : (const _Tp&));
+        ^
+
+wave_pochoir.cpp(35890): error: expected a ")"
+      ((const _Tp&) > (const _Tp&) ? (const _Tp&) : (const _Tp&));
+                 ^
+
+wave_pochoir.cpp(35890): error: expected a ")"
+      ((const _Tp&) > (const _Tp&) ? (const _Tp&) : (const _Tp&));
+                    ^
+
+wave_pochoir.cpp(35890): error: "_Tp" is not a function or static data member
+      ((const _Tp&) > (const _Tp&) ? (const _Tp&) : (const _Tp&));
+              ^
+
+wave_pochoir.cpp(35895): warning #945: type qualifier ignored
+      ((const _Tp&) < (const _Tp&) ? (const _Tp&) : (const _Tp&));
+        ^
+
+wave_pochoir.cpp(35895): error: expected a ")"
+      ((const _Tp&) < (const _Tp&) ? (const _Tp&) : (const _Tp&));
+                 ^
+
+wave_pochoir.cpp(35895): error: expected a ")"
+      ((const _Tp&) < (const _Tp&) ? (const _Tp&) : (const _Tp&));
+                    ^
+
+wave_pochoir.cpp(35895): error: "_Tp" is not a function or static data member
+      ((const _Tp&) < (const _Tp&) ? (const _Tp&) : (const _Tp&));
+              ^
+
+wave_pochoir.cpp(35899): warning #945: type qualifier ignored
+      ((const _Tp&) < (const _Tp&) ? (const _Tp&) : (const _Tp&));
+        ^
+
+wave_pochoir.cpp(35899): error: expected a ")"
+      ((const _Tp&) < (const _Tp&) ? (const _Tp&) : (const _Tp&));
+                 ^
+
+wave_pochoir.cpp(35899): error: expected a ")"
+      ((const _Tp&) < (const _Tp&) ? (const _Tp&) : (const _Tp&));
+                    ^
+
+wave_pochoir.cpp(35899): error: "_Tp" is not a function or static data member
+      ((const _Tp&) < (const _Tp&) ? (const _Tp&) : (const _Tp&));
+              ^
+
+wave_pochoir.cpp(35920): error: an explicit template argument list is not allowed on this declaration
+      ((initializer_list<_Tp>) < () ? (initializer_list<_Tp>) : ());
+        ^
+
+wave_pochoir.cpp(35920): error: expected a ")"
+      ((initializer_list<_Tp>) < () ? (initializer_list<_Tp>) : ());
+                               ^
+
+wave_pochoir.cpp(35924): error: an explicit template argument list is not allowed on this declaration
+      ((initializer_list<_Tp>) < (_Compare) ? (initializer_list<_Tp>) : (_Compare));
+        ^
+
+wave_pochoir.cpp(35924): error: expected a ")"
+      ((initializer_list<_Tp>) < (_Compare) ? (initializer_list<_Tp>) : (_Compare));
+                               ^
+
+wave_pochoir.cpp(35928): error: an explicit template argument list is not allowed on this declaration
+      ((initializer_list<_Tp>) > () ? (initializer_list<_Tp>) : ());
+        ^
+
+wave_pochoir.cpp(35928): error: expected a ")"
+      ((initializer_list<_Tp>) > () ? (initializer_list<_Tp>) : ());
+                               ^
+
+wave_pochoir.cpp(35932): error: an explicit template argument list is not allowed on this declaration
+      ((initializer_list<_Tp>) > (_Compare) ? (initializer_list<_Tp>) : (_Compare));
+        ^
+
+wave_pochoir.cpp(35932): error: expected a ")"
+      ((initializer_list<_Tp>) > (_Compare) ? (initializer_list<_Tp>) : (_Compare));
+                               ^
+
+wave_pochoir.cpp(37234): error: expected an identifier
+        (() < () ? () : ()) throw() { return static_cast<_Tp>(0); }
+          ^
+
+wave_pochoir.cpp(37234): error: expected a ")"
+        (() < () ? () : ()) throw() { return static_cast<_Tp>(0); }
+            ^
+
+wave_pochoir.cpp(37234): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return static_cast<_Tp>(0); }
+                      ^
+
+wave_pochoir.cpp(37234): error: expected a ";"
+        (() < () ? () : ()) throw() { return static_cast<_Tp>(0); }
+                      ^
+
+wave_pochoir.cpp(37273): warning #12: parsing restarts here after previous syntax error
+      };
+      ^
+
+wave_pochoir.cpp(37294): error: expected an identifier
+        (() < () ? () : ()) throw() { return false; }
+          ^
+
+wave_pochoir.cpp(37294): error: expected a ")"
+        (() < () ? () : ()) throw() { return false; }
+            ^
+
+wave_pochoir.cpp(37294): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return false; }
+                      ^
+
+wave_pochoir.cpp(37294): error: expected a ";"
+        (() < () ? () : ()) throw() { return false; }
+                      ^
+
+wave_pochoir.cpp(37301): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = 1;
+                                       ^
+
+wave_pochoir.cpp(37357): error: expected an identifier
+        (() < () ? () : ()) throw() { return (((char)(-1) < 0) ? (char)1 << (sizeof(char) * 8 - ((char)(-1) < 0)) : (char)0); }
+          ^
+
+wave_pochoir.cpp(37357): error: expected a ")"
+        (() < () ? () : ()) throw() { return (((char)(-1) < 0) ? (char)1 << (sizeof(char) * 8 - ((char)(-1) < 0)) : (char)0); }
+            ^
+
+wave_pochoir.cpp(37357): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return (((char)(-1) < 0) ? (char)1 << (sizeof(char) * 8 - ((char)(-1) < 0)) : (char)0); }
+                      ^
+
+wave_pochoir.cpp(37357): error: expected a ";"
+        (() < () ? () : ()) throw() { return (((char)(-1) < 0) ? (char)1 << (sizeof(char) * 8 - ((char)(-1) < 0)) : (char)0); }
+                      ^
+
+wave_pochoir.cpp(37365): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = (sizeof(char) * 8 - ((char)(-1) < 0));
+                                                                           ^
+
+wave_pochoir.cpp(37420): error: expected an identifier
+        (() < () ? () : ()) throw() { return -127 - 1; }
+          ^
+
+wave_pochoir.cpp(37420): error: expected a ")"
+        (() < () ? () : ()) throw() { return -127 - 1; }
+            ^
+
+wave_pochoir.cpp(37420): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return -127 - 1; }
+                      ^
+
+wave_pochoir.cpp(37420): error: expected a ";"
+        (() < () ? () : ()) throw() { return -127 - 1; }
+                      ^
+
+wave_pochoir.cpp(37428): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = (sizeof(signed char) * 8 - ((signed char)(-1) < 0));
+                                                                                         ^
+
+wave_pochoir.cpp(37484): error: expected an identifier
+        (() < () ? () : ()) throw() { return 0; }
+          ^
+
+wave_pochoir.cpp(37484): error: expected a ")"
+        (() < () ? () : ()) throw() { return 0; }
+            ^
+
+wave_pochoir.cpp(37484): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(37484): error: expected a ";"
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(37493): warning #12: parsing restarts here after previous syntax error
+         = (sizeof(unsigned char) * 8 - ((unsigned char)(-1) < 0));
+                                                                  ^
+
+wave_pochoir.cpp(37549): error: expected an identifier
+        (() < () ? () : ()) throw() { return (((wchar_t)(-1) < 0) ? (wchar_t)1 << (sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) : (wchar_t)0); }
+          ^
+
+wave_pochoir.cpp(37549): error: expected a ")"
+        (() < () ? () : ()) throw() { return (((wchar_t)(-1) < 0) ? (wchar_t)1 << (sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) : (wchar_t)0); }
+            ^
+
+wave_pochoir.cpp(37549): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return (((wchar_t)(-1) < 0) ? (wchar_t)1 << (sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) : (wchar_t)0); }
+                      ^
+
+wave_pochoir.cpp(37549): error: expected a ";"
+        (() < () ? () : ()) throw() { return (((wchar_t)(-1) < 0) ? (wchar_t)1 << (sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) : (wchar_t)0); }
+                      ^
+
+wave_pochoir.cpp(37557): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = (sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0));
+                                                                                 ^
+
+wave_pochoir.cpp(37613): error: expected an identifier
+        (() < () ? () : ()) throw() { return (((char16_t)(-1) < 0) ? (char16_t)1 << (sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) : (char16_t)0); }
+          ^
+
+wave_pochoir.cpp(37613): error: expected a ")"
+        (() < () ? () : ()) throw() { return (((char16_t)(-1) < 0) ? (char16_t)1 << (sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) : (char16_t)0); }
+            ^
+
+wave_pochoir.cpp(37613): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return (((char16_t)(-1) < 0) ? (char16_t)1 << (sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) : (char16_t)0); }
+                      ^
+
+wave_pochoir.cpp(37613): error: expected a ";"
+        (() < () ? () : ()) throw() { return (((char16_t)(-1) < 0) ? (char16_t)1 << (sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) : (char16_t)0); }
+                      ^
+
+wave_pochoir.cpp(37622): warning #12: parsing restarts here after previous syntax error
+         = (sizeof(char16_t) * 8 - ((char16_t)(-1) < 0));
+                                                        ^
+
+wave_pochoir.cpp(37679): error: expected an identifier
+        (() < () ? () : ()) throw() { return (((char32_t)(-1) < 0) ? (char32_t)1 << (sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) : (char32_t)0); }
+          ^
+
+wave_pochoir.cpp(37679): error: expected a ")"
+        (() < () ? () : ()) throw() { return (((char32_t)(-1) < 0) ? (char32_t)1 << (sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) : (char32_t)0); }
+            ^
+
+wave_pochoir.cpp(37679): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return (((char32_t)(-1) < 0) ? (char32_t)1 << (sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) : (char32_t)0); }
+                      ^
+
+wave_pochoir.cpp(37679): error: expected a ";"
+        (() < () ? () : ()) throw() { return (((char32_t)(-1) < 0) ? (char32_t)1 << (sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) : (char32_t)0); }
+                      ^
+
+wave_pochoir.cpp(37687): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = (sizeof(char32_t) * 8 - ((char32_t)(-1) < 0));
+                                                                                   ^
+
+wave_pochoir.cpp(37744): error: expected an identifier
+        (() < () ? () : ()) throw() { return -32767 - 1; }
+          ^
+
+wave_pochoir.cpp(37744): error: expected a ")"
+        (() < () ? () : ()) throw() { return -32767 - 1; }
+            ^
+
+wave_pochoir.cpp(37744): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return -32767 - 1; }
+                      ^
+
+wave_pochoir.cpp(37744): error: expected a ";"
+        (() < () ? () : ()) throw() { return -32767 - 1; }
+                      ^
+
+wave_pochoir.cpp(37752): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = (sizeof(short) * 8 - ((short)(-1) < 0));
+                                                                             ^
+
+wave_pochoir.cpp(37807): error: expected an identifier
+        (() < () ? () : ()) throw() { return 0; }
+          ^
+
+wave_pochoir.cpp(37807): error: expected a ")"
+        (() < () ? () : ()) throw() { return 0; }
+            ^
+
+wave_pochoir.cpp(37807): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(37807): error: expected a ";"
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(37816): warning #12: parsing restarts here after previous syntax error
+         = (sizeof(unsigned short) * 8 - ((unsigned short)(-1) < 0));
+                                                                    ^
+
+wave_pochoir.cpp(37872): error: expected an identifier
+        (() < () ? () : ()) throw() { return -2147483647 - 1; }
+          ^
+
+wave_pochoir.cpp(37872): error: expected a ")"
+        (() < () ? () : ()) throw() { return -2147483647 - 1; }
+            ^
+
+wave_pochoir.cpp(37872): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return -2147483647 - 1; }
+                      ^
+
+wave_pochoir.cpp(37872): error: expected a ";"
+        (() < () ? () : ()) throw() { return -2147483647 - 1; }
+                      ^
+
+wave_pochoir.cpp(37880): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = (sizeof(int) * 8 - ((int)(-1) < 0));
+                                                                         ^
+
+wave_pochoir.cpp(37935): error: expected an identifier
+        (() < () ? () : ()) throw() { return 0; }
+          ^
+
+wave_pochoir.cpp(37935): error: expected a ")"
+        (() < () ? () : ()) throw() { return 0; }
+            ^
+
+wave_pochoir.cpp(37935): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(37935): error: expected a ";"
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(37944): warning #12: parsing restarts here after previous syntax error
+         = (sizeof(unsigned int) * 8 - ((unsigned int)(-1) < 0));
+                                                                ^
+
+wave_pochoir.cpp(38000): error: expected an identifier
+        (() < () ? () : ()) throw() { return -9223372036854775807L - 1; }
+          ^
+
+wave_pochoir.cpp(38000): error: expected a ")"
+        (() < () ? () : ()) throw() { return -9223372036854775807L - 1; }
+            ^
+
+wave_pochoir.cpp(38000): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return -9223372036854775807L - 1; }
+                      ^
+
+wave_pochoir.cpp(38000): error: expected a ";"
+        (() < () ? () : ()) throw() { return -9223372036854775807L - 1; }
+                      ^
+
+wave_pochoir.cpp(38008): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = (sizeof(long) * 8 - ((long)(-1) < 0));
+                                                                           ^
+
+wave_pochoir.cpp(38063): error: expected an identifier
+        (() < () ? () : ()) throw() { return 0; }
+          ^
+
+wave_pochoir.cpp(38063): error: expected a ")"
+        (() < () ? () : ()) throw() { return 0; }
+            ^
+
+wave_pochoir.cpp(38063): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(38063): error: expected a ";"
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(38072): warning #12: parsing restarts here after previous syntax error
+         = (sizeof(unsigned long) * 8 - ((unsigned long)(-1) < 0));
+                                                                  ^
+
+wave_pochoir.cpp(38128): error: expected an identifier
+        (() < () ? () : ()) throw() { return -0x7fffffffffffffff - 1; }
+          ^
+
+wave_pochoir.cpp(38128): error: expected a ")"
+        (() < () ? () : ()) throw() { return -0x7fffffffffffffff - 1; }
+            ^
+
+wave_pochoir.cpp(38128): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return -0x7fffffffffffffff - 1; }
+                      ^
+
+wave_pochoir.cpp(38128): error: expected a ";"
+        (() < () ? () : ()) throw() { return -0x7fffffffffffffff - 1; }
+                      ^
+
+wave_pochoir.cpp(38137): warning #12: parsing restarts here after previous syntax error
+         = (sizeof(long long) * 8 - ((long long)(-1) < 0));
+                                                          ^
+
+wave_pochoir.cpp(38193): error: expected an identifier
+        (() < () ? () : ()) throw() { return 0; }
+          ^
+
+wave_pochoir.cpp(38193): error: expected a ")"
+        (() < () ? () : ()) throw() { return 0; }
+            ^
+
+wave_pochoir.cpp(38193): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(38193): error: expected a ";"
+        (() < () ? () : ()) throw() { return 0; }
+                      ^
+
+wave_pochoir.cpp(38202): warning #12: parsing restarts here after previous syntax error
+         = (sizeof(unsigned long long) * 8 - ((unsigned long long)(-1) < 0));
+                                                                            ^
+
+wave_pochoir.cpp(38258): error: expected an identifier
+        (() < () ? () : ()) throw() { return 1.17549435e-38F; }
+          ^
+
+wave_pochoir.cpp(38258): error: expected a ")"
+        (() < () ? () : ()) throw() { return 1.17549435e-38F; }
+            ^
+
+wave_pochoir.cpp(38258): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return 1.17549435e-38F; }
+                      ^
+
+wave_pochoir.cpp(38258): error: expected a ";"
+        (() < () ? () : ()) throw() { return 1.17549435e-38F; }
+                      ^
+
+wave_pochoir.cpp(38266): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = 24;
+                                        ^
+
+wave_pochoir.cpp(38326): error: expected an identifier
+        (() < () ? () : ()) throw()  { return 2.2250738585072014e-308; }
+          ^
+
+wave_pochoir.cpp(38326): error: expected a ")"
+        (() < () ? () : ()) throw()  { return 2.2250738585072014e-308; }
+            ^
+
+wave_pochoir.cpp(38326): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw()  { return 2.2250738585072014e-308; }
+                      ^
+
+wave_pochoir.cpp(38326): error: expected a ";"
+        (() < () ? () : ()) throw()  { return 2.2250738585072014e-308; }
+                      ^
+
+wave_pochoir.cpp(38334): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = 53;
+                                        ^
+
+wave_pochoir.cpp(38394): error: expected an identifier
+        (() < () ? () : ()) throw() { return 3.36210314311209350626e-4932L; }
+          ^
+
+wave_pochoir.cpp(38394): error: expected a ")"
+        (() < () ? () : ()) throw() { return 3.36210314311209350626e-4932L; }
+            ^
+
+wave_pochoir.cpp(38394): error: a constexpr static data member declaration requires an in-class initializer
+        (() < () ? () : ()) throw() { return 3.36210314311209350626e-4932L; }
+                      ^
+
+wave_pochoir.cpp(38394): error: expected a ";"
+        (() < () ? () : ()) throw() { return 3.36210314311209350626e-4932L; }
+                      ^
+
+wave_pochoir.cpp(38402): warning #12: parsing restarts here after previous syntax error
+        static constexpr int digits = 64;
+                                        ^
+
+wave_pochoir.cpp(41836): error: expected an identifier
+  	(() < () ? () : ()) const
+  	  ^
+
+wave_pochoir.cpp(41836): error: expected a ")"
+  	(() < () ? () : ()) const
+  	    ^
+
+wave_pochoir.cpp(41836): error: expected an expression
+  	(() < () ? () : ()) const
+  	                 ^
+
+wave_pochoir.cpp(41836): error: expected a ";"
+  	(() < () ? () : ()) const
+  	                  ^
+
+compilation aborted for wave_pochoir.cpp (code 4)

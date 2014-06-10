@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=16
+#SBATCH --time=1:00:00
+#SBATCH --account=s377
+
+for compiler in gnu icc cray
+do
+	echo "------------- $compiler ------------"
+	echo
+	echo
+	
+	for t in 1 2 4 8 16
+	do
+		export OMP_NUM_THREADS=$t
+		echo "------------- $t Threads ------------"
+		for i in 1 2 3 4 5
+		do
+#			aprun -n 1 -N 1 -d $t $SCRATCH/wavepluto.$compiler.todi
+			aprun -n 1 -N 1 -d $t ./wavepluto.$compiler.todi
+		done
+		echo
+		echo
+	done
+done

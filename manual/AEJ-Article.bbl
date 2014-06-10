@@ -1,0 +1,11 @@
+
+
+% Bibstyle aea.bst version 2009.05.20
+
+\begin{thebibliography}{xx}
+
+\harvarditem[Nash]{John~F. Nash}{1950}{Nash}
+{\bf Nash, John~F.} 1950. ``Equilibrium points in n-person games.'' {\em
+  Proceedings of the National Academy of Sciences}, 36(1):~48--49.
+
+\end{thebibliography}

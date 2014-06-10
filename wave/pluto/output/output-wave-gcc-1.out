@@ -1,0 +1,26 @@
+------------- 1 Threads ------------
+Writing file 0101.txt...
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 7.548635
+Performance in GFlop/s:     1.695671
+
+Writing file 0101.txt...
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 7.560224
+Performance in GFlop/s:     1.693072
+
+Writing file 0101.txt...
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 7.567757
+Performance in GFlop/s:     1.691386
+
+Writing file 0101.txt...
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 7.553658
+Performance in GFlop/s:     1.694543
+
+Writing file 0101.txt...
+FLOPs in stencil code:      1.280000e+10
+Time spent in stencil code: 7.551332
+Performance in GFlop/s:     1.695065
+

@@ -1,0 +1,26 @@
+------------- 16 Threads ------------
+Number of flops: 12800000000
+Time used:       2.70058  s
+Performance:     4.73972 GFlop/s
+5941829850
+
+Number of flops: 12800000000
+Time used:       2.77591  s
+Performance:     4.61111 GFlop/s
+6107564200
+
+Number of flops: 12800000000
+Time used:       2.75615  s
+Performance:     4.64417 GFlop/s
+6064088264
+
+Number of flops: 12800000000
+Time used:       2.75222  s
+Performance:     4.65079 GFlop/s
+6055456068
+
+Number of flops: 12800000000
+Time used:       2.74786  s
+Performance:     4.65817 GFlop/s
+6045852912
+
