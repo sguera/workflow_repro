@@ -1,5 +1,0 @@
-#!/bin/bash
-export OMP_NUM_THREADS=2
-echo "------------- mintb-wave1-out ------------"
-echo "------------- 2 Threads ------------"
-java -jar  /users/staff/ifi/guerrera/reproducibility/sgsponer-trans-d46737626b60/StencilCompilers/patus/patus/bin/patus.jar autotune /users/staff/ifi/guerrera/reproducibility/sgsponer-trans-d46737626b60/wave/patus//patusGenerated/bench 208 204 204 52,64,104,128,208 4:4:204 4:4:204 1,2,4 0:8 "C((\$1+\$4-1)/\$4)*((\$2+\$5-1)/\$5)*((\$3+\$6-1)/\$6)>=2" -mch.unibas.cs.hpwc.patus.autotuner.MetaHeuristicOptimizer
