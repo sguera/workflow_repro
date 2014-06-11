@@ -21,12 +21,13 @@ cd $dir
 usage="$(basename "$0") [-h] [compiler] Install specified Compiler
 
 where:
-    -h  show this help text
-    compiler can be one or more of: patus
-                                    pochoir
-                                    pluto
-			            halide
-			            all"
+	-h  show this help text
+	compiler can be one or more of: 
+					patus
+					pochoir
+					pluto
+					halide
+					all"
 
 #Handle call with no argument
 if [ "$#" == 0 ]; then

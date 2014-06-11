@@ -6,7 +6,13 @@ DIR=`pwd`
 fnCompileRunNaive(){
     cd naive/src
     make
-    cd ../run
+	cd ..
+	#create output folder
+	if [ -d "output" ]; then
+    	rm -r output
+	fi
+	mkdir output
+    cd run
     ./run-bench.sh
     cd $DIR
 }
@@ -15,6 +21,11 @@ fnCompileRunNaive(){
 fnGenerateCompileRunPatus(){
     cd patus
     ./generateCode.sh
+	#create folder where to install
+	if [ -d "output" ]; then
+    	rm -r output
+	fi
+	mkdir output
     cd run
     ./generateJobAndRun.sh
     cd $DIR
@@ -25,7 +36,13 @@ fnCompileRunPochoir(){
     cd pochoir/src
     export POCHOIR_LIB_PATH=$BENCHROOT/StencilCompilers/pochoir/pochoir_v0.5
     make
-    cd ../run
+    cd ..
+	#create output folder
+	if [ -d "output" ]; then
+    	rm -r output
+	fi
+	mkdir output
+    cd run
     ./runpochoir.sh
     cd $DIR
  }
@@ -36,7 +53,13 @@ fnCompileRunHalide(){
     export LD_LIBRARY_PATH=$BENCHROOT/StencilCompilers/halide/halide/bin:$LD_LIBRARY_PATH
     #echo $LD_LIBRARY_PATH
     make
-    cd ../run
+    cd ..
+	#create output folder
+	if [ -d "output" ]; then
+    	rm -r output
+	fi
+	mkdir output
+    cd run
     ./runhalide.sh
     cd $DIR
 }
@@ -45,7 +68,13 @@ fnCompileRunHalide(){
 fnCompileRunPluto(){
     cd pluto/src
     make
-    cd ../run
+    cd ..
+	#create output folder
+	if [ -d "output" ]; then
+    	rm -r output
+	fi
+	mkdir output
+    cd run
     ./runpluto.sh
     cd $DIR
 }
@@ -55,12 +84,13 @@ fnCompileRunPluto(){
 usage="$(basename "$0") [-h] [compiler] Run the benchmark with specified Compiler
 
 where:
-    -h  show this help text
-    compiler can be one or more of: patus
-                                    pochoir
-                                    pluto
-			            halide
-			            all"
+	-h  show this help text
+	compiler can be one or more of: 
+					patus
+					pochoir
+					pluto
+					halide
+					all"
 
 #Handle call with no argument
 if [ "$#" == 0 ]; then
@@ -83,15 +113,15 @@ while [ "$1" != "" ]; do
         Halide | halide)        fnCompileRunHalide
                                 ;;
 
-	Naive | naive)          fnCompileRunNaive "naive"
-	                        ;;
+		Naive | naive)          fnCompileRunNaive "naive"
+	                        	;;
 
         -h | --help )           echo "$usage"
                                 exit 1
                                 ;;
 
         all | All )             fnCompileRunNaive
-	                        fnGenerateCompileRunPatus
+	                    	    fnGenerateCompileRunPatus
                                 fnCompileRunPochoir
                                 fnCompileRunPluto
                                 fnCompileRunHalide

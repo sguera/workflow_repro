@@ -1,4 +1,0 @@
-export BENCHROOT=`pwd`
-export NTHREADS='1 2 4 8 16 32'
-export DIM='200 200 200'
-export INTEL_VARS=/users/stud/g/gspsev00/intel/bin/compilervars.sh
