@@ -34,11 +34,12 @@ run(){
 	#Gather outputs
 	./gatheringOutputs.sh $compilers
 
-	#Produce a plot and store it
+	#Produce a plot
 	gnuplot gnuplot.gp
 	if [ ! -d $outdir ]; then
-		mkdir $outdir
+			mkdir $outdir
 	fi
+
 	cp $PLOT_OUT $outdir/.
 	cd $dir
 	rm started_time.txt

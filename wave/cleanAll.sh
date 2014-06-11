@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 #Naive
 DIR=`pwd`
 fnCompileRunNaive(){
@@ -12,28 +10,28 @@ fnCompileRunNaive(){
 
 #Patus
 fnGenerateCompileRunPatus(){
-    cd Patus
+    cd patus
     rm -r patusGenerated
     cd $DIR
  }
 
 #Pochoir
 fnCompileRunPochoir(){
-    cd Pochoir/src
+    cd pochoir/src
     make clean
     cd $DIR
  }
 
 #Halide
 fnCompileRunHalide(){
-    cd Halide/src
+    cd halide/src
     make clean
     cd $DIR
 }
 
 #Pluto
 fnCompileRunPluto(){
-    cd Pluto/src
+    cd pluto/src
     make clean
     cd $DIR
 }
@@ -58,41 +56,41 @@ fi
 
 #Handle the Arguments
 while [ "$1" != "" ]; do
-    case $1 in
-        Patus | patus)          fnGenerateCompileRunPatus
-                                ;;
+	case $1 in
+		Patus | patus)			fnGenerateCompileRunPatus
+								;;
 
-        Pochoir | pochoir)      fnCompileRunPochoir
-                                ;;
+		Pochoir | pochoir)		fnCompileRunPochoir
+								;;
 
-        Pluto | pluto)          fnCompileRunPluto
-                                ;;
+		Pluto | pluto)			fnCompileRunPluto
+								;;
 
-        Halide | halide)        fnCompileRunHalide
-                                ;;
+		Halide | halide)		fnCompileRunHalide
+								;;
 
-	Naive | naive)          fnCompileRunNaive "naive"
-	                        ;;
+		Naive | naive)			fnCompileRunNaive "naive"
+								;;
 
-        -h | --help )           echo "$usage"
-                                exit
-                                ;;
+		-h | --help )			echo "$usage"
+								exit 1
+								;;
 
-        all | All )             fnCompileRunNaive
-	                        fnGenerateCompileRunPatus
-                                fnCompileRunPochoir
-                                fnCompileRunPluto
-                                fnCompileRunHalide
-                                exit 1
-                                ;;
+		all | All )				fnCompileRunNaive
+								fnGenerateCompileRunPatus
+								fnCompileRunPochoir
+								fnCompileRunPluto
+								fnCompileRunHalide
+								exit 1
+								;;
 
-        * )                     fnCompileRunNaive
-	                        fnGenerateCompileRunPatus
-                                fnCompileRunPochoir
-                                fnCompileRunPluto
-                                fnCompileRunHalide
-                                exit 1
-                                ;;
-    esac
-    shift
+		* )						fnCompileRunNaive
+								fnGenerateCompileRunPatus
+								fnCompileRunPochoir
+								fnCompileRunPluto
+								fnCompileRunHalide
+								exit 1
+								;;
+	esac
+	shift
 done

@@ -4,79 +4,79 @@ set -e
 #Naive
 DIR=`pwd`
 fnCompileRunNaive(){
-    cd naive/src
-    make
+	cd naive/src
+	make
 	cd ..
 	#create output folder
 	if [ -d "output" ]; then
-    	rm -r output
+		rm -r output
 	fi
 	mkdir output
-    cd run
-    ./run-bench.sh
-    cd $DIR
+	cd run
+	./run-bench.sh
+	cd $DIR
 }
 
 #Patus
 fnGenerateCompileRunPatus(){
-    cd patus
-    ./generateCode.sh
+	cd patus
+	./generateCode.sh
 	#create folder where to install
 	if [ -d "output" ]; then
-    	rm -r output
+		rm -r output
 	fi
 	mkdir output
-    cd run
-    ./generateJobAndRun.sh
-    cd $DIR
+	cd run
+	./generateJobAndRun.sh
+	cd $DIR
 }
 
 #Pochoir
 fnCompileRunPochoir(){
-    cd pochoir/src
-    export POCHOIR_LIB_PATH=$BENCHROOT/StencilCompilers/pochoir/pochoir_v0.5
-    make
-    cd ..
+	cd pochoir/src
+	export POCHOIR_LIB_PATH=$BENCHROOT/StencilCompilers/pochoir/pochoir_v0.5
+	make
+	cd ..
 	#create output folder
 	if [ -d "output" ]; then
-    	rm -r output
+		rm -r output
 	fi
 	mkdir output
-    cd run
-    ./runpochoir.sh
-    cd $DIR
+	cd run
+	./runpochoir.sh
+	cd $DIR
  }
 
 #Halide
 fnCompileRunHalide(){
-    cd halide/src
-    export LD_LIBRARY_PATH=$BENCHROOT/StencilCompilers/halide/halide/bin:$LD_LIBRARY_PATH
-    #echo $LD_LIBRARY_PATH
-    make
-    cd ..
+	cd halide/src
+	export LD_LIBRARY_PATH=$BENCHROOT/StencilCompilers/halide/halide/bin:$LD_LIBRARY_PATH
+	#echo $LD_LIBRARY_PATH
+	make
+	cd ..
 	#create output folder
 	if [ -d "output" ]; then
-    	rm -r output
+		rm -r output
 	fi
 	mkdir output
-    cd run
-    ./runhalide.sh
-    cd $DIR
+	cd run
+	./runhalide.sh
+	cd $DIR
 }
 
 #Pluto
 fnCompileRunPluto(){
-    cd pluto/src
-    make
-    cd ..
+	cd pluto/src
+	make
+	cd ..
 	#create output folder
 	if [ -d "output" ]; then
-    	rm -r output
+		rm -r output
 	fi
 	mkdir output
-    cd run
-    ./runpluto.sh
-    cd $DIR
+	cd run
+	./runpluto.sh
+	cd $DIR
 }
 
 #Help Message
@@ -94,43 +94,43 @@ where:
 
 #Handle call with no argument
 if [ "$#" == 0 ]; then
-echo "$1"
-set -- "$@" "naive pluto pochoir patus halide";
+	echo "$1"
+	set -- "$@" "naive pluto pochoir patus halide";
 fi
 
 #Handle the Arguments
 while [ "$1" != "" ]; do
-    case $1 in
-        Patus | patus)          fnGenerateCompileRunPatus
-                                ;;
+	case $1 in
+		Patus | patus)			fnGenerateCompileRunPatus
+								;;
 
-        Pochoir | pochoir)      fnCompileRunPochoir
-                                ;;
+		Pochoir | pochoir)		fnCompileRunPochoir
+								;;
 
-        Pluto | pluto)          fnCompileRunPluto
-                                ;;
+		Pluto | pluto)			fnCompileRunPluto
+								;;
 
-        Halide | halide)        fnCompileRunHalide
-                                ;;
+		Halide | halide)		fnCompileRunHalide
+								;;
 
-		Naive | naive)          fnCompileRunNaive "naive"
-	                        	;;
+		Naive | naive)			fnCompileRunNaive "naive"
+								;;
 
-        -h | --help )           echo "$usage"
-                                exit 1
-                                ;;
+		-h | --help )			echo "$usage"
+								exit 1
+								;;
 
-        all | All )             fnCompileRunNaive
-	                    	    fnGenerateCompileRunPatus
-                                fnCompileRunPochoir
-                                fnCompileRunPluto
-                                fnCompileRunHalide
-                                exit 1
-                                ;;
+		all | All )				fnCompileRunNaive
+								fnGenerateCompileRunPatus
+								fnCompileRunPochoir
+								fnCompileRunPluto
+								fnCompileRunHalide
+								exit 1
+								;;
 
-        * )                     echo "$usage"
-                                exit 1
-                                ;;
-    esac
-    shift
+		* )						echo "$usage"
+								exit 1
+								;;
+	esac
+	shift
 done

@@ -6,15 +6,6 @@ FILE="$DIR/result.dat"
 PLOT="$DIR/gnuplot.gp"
 count=0;
 
-if [ "$PLOT_OUT" == "" ]; then 
-	PLOT_OUT=results.png
-fi
-
-#Handle call with no argument
-if [ "$#" == 0 ]; then
-	set -- "$@" "naive pluto pochoir patus halide";
-fi
-
 # start table heading
 printf "CPU" >$FILE
 
