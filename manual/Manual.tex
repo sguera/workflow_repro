@@ -90,7 +90,7 @@ There are two ways to use the workflow: a fully automated and a step-by-step one
 
 You can use this command to install the compilers or automatically run the tests. In both cases you can specify one or more compilers to be installed or executed. At the end of its execution a graph will be produced and placed into the  \emph{workflow\_outputs} folder.
 \subsection{Step-by-step usage}
-First thing we need to do is source the SetupEnv.sh file. This set some environment variable for all the shell scripts like the root directory.
+First thing you need to do is source the SetupEnv.sh file. This sets some environment variables for all the shell scripts like the root directory.
 
 \begin{lstlisting}[frame=single,language=bash]
   $ source SetupEnv
@@ -102,20 +102,20 @@ If the compilers are not installed yet switch to the \emph{StencilCompilers} fol
   $ ./installAll.sh 
 \end{lstlisting}
 
-It is also possible to run the script only for a specific compiler. To achieve this simple give the name of the compiler as argument.
+It is also possible to run the script only for a specific compiler. To achieve this, simply pass the name of the compiler as argument.
 \\
-Each compiler comes with its own dependencies. At the end of this document I will provide a not final list for each compiler. 
+Each compiler comes with its own dependencies. At the end of this document will be provided a list for each compiler. 
 \\
-After installing all the compilers we can begin to run the comparison. For this change to the wave folder and execute the \emph{runAll.sh}.
+After installing all of the compilers you can begin to run the comparison. For doing this, change to the\emph{ wave} folder and execute the \emph{runAll.sh}.
 
 \begin{lstlisting}[frame=single,language=bash]
   $ cd ../wave
   $ ./runAll.sh
 \end{lstlisting}
 
-This step will take some time since it actually run the wave stencil with all the compiler for different number of threads. Per default this runs the stencil for 1, 2, 4, 8, 16 threads but this can be changed in the \emph{SetupEnv.sh} file.
+This step will take some time since it actually runs the wave stencil with all of the compiler for different number of threads. By default this runs the stencil for 1, 2, 4, 8, 16, 32 threads but this can be changed in the \emph{SetupEnv.sh} file.
 \\
-When the computation is finished the \emph{gatheringOutputs.sh} script can be executed which creates the result.dat file containing all the outputs. This file can afterwards be plotted with the \emph{gnuplot.gp} file.
+When the computation is finished the \emph{gatheringOutputs.sh} script can be executed: it creates the result.dat file containing all of the outputs. The data stored into it can afterwards be plotted exploiting the \emph{gnuplot.gp} file.
 
 \begin{lstlisting}[frame=single,language=bash]
   $ ./gatheringOutputs.sh
@@ -140,7 +140,7 @@ After this step a plot sorted by number of threads shows up.
 \subsection{Pochoir}
 
 \begin{itemize}
-	\item Intel C++ Compiler version 12.0.0 or later with Cilk Plus extension, up to v 13.0.0
+	\item Intel C++ Compiler version 12.0.0 or later (up to v 13.1.2) with Cilk Plus extension
 	\item Glasgow Haskell Compilation System version 6.12.1 or later
 	\item Parsec-2.1.0.1 or later
 \end{itemize}
