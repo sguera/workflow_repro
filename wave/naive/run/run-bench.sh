@@ -1,5 +1,5 @@
 #!/bin/bash
-for prog in wave1 wave2
+for prog in wave1
 do
     echo "------------- $prog ------------"
     for compiler in gcc icc
@@ -16,7 +16,7 @@ do
 		echo "------------- $t Threads ------------">>$FILE
 		for i in 1 2 3 4 5
 		do
-			../src/$prog/$prog 200 200 200 >> $FILE 
+			../src/$prog/$prog.$compiler 200 200 200 >> $FILE 
 		done
 		echo >>$FILE
 		echo >>$FILE
