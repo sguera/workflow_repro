@@ -3,7 +3,7 @@
 #Naive
 DIR=`pwd`
 fnCompileRunOpenmp(){
-    cd naive/src
+    cd openmp/src
     make clean
     cd $DIR
 }

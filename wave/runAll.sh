@@ -4,7 +4,7 @@ set -e
 #Naive
 DIR=`pwd`
 fnCompileRunOpenmp(){
-	cd naive/src
+	cd openmp/src
 	make openmp
 	cd ..
 	#create output folder
