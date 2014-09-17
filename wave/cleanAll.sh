@@ -2,7 +2,7 @@
 
 #Naive
 DIR=`pwd`
-fnCompileRunNaive(){
+fnCompileRunOpenmp(){
     cd naive/src
     make clean
     cd $DIR
@@ -69,14 +69,14 @@ while [ "$1" != "" ]; do
 		Halide | halide)		fnCompileRunHalide
 								;;
 
-		Naive | naive)			fnCompileRunNaive "naive"
+		Openmp | openmp)			fnCompileRunOpenmp "openmp"
 								;;
 
 		-h | --help )			echo "$usage"
 								exit 1
 								;;
 
-		all | All )				fnCompileRunNaive
+		all | All )				fnCompileRunOpenmp
 								fnGenerateCompileRunPatus
 								fnCompileRunPochoir
 								fnCompileRunPluto
@@ -84,7 +84,7 @@ while [ "$1" != "" ]; do
 								exit 1
 								;;
 
-		* )						fnCompileRunNaive
+		* )						fnCompileRunOpenmp
 								fnGenerateCompileRunPatus
 								fnCompileRunPochoir
 								fnCompileRunPluto
