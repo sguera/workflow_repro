@@ -3,9 +3,9 @@ set -e
 
 #Naive
 DIR=`pwd`
-fnCompileRunNaive(){
+fnCompileRunOpenmp(){
 	cd naive/src
-	make
+	make openmp
 	cd ..
 	#create output folder
 	if [ -d "output" ]; then
@@ -113,14 +113,14 @@ while [ "$1" != "" ]; do
 		Halide | halide)		fnCompileRunHalide
 								;;
 
-		Naive | naive)			fnCompileRunNaive "naive"
+		Openmp | openmp)			fnCompileRunOpenmp "openmp"
 								;;
 
 		-h | --help )			echo "$usage"
 								exit 1
 								;;
 
-		all | All )				fnCompileRunNaive
+		all | All )				fnCompileRunOpenmp
 								fnGenerateCompileRunPatus
 								fnCompileRunPochoir
 								fnCompileRunPluto
