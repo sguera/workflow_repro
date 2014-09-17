@@ -8,17 +8,17 @@ LM= -lm
 #FLAGS = -O3 -hfp3
 
 code_wave1=wave1
-openmp=wave2
+code_wave2=wave2
 
-all: openmp
+all: wave1s wave2s
 
 wave1s:
 	$(MAKE) -C $(code_wave1) all
 
 wave2s: 
-	$(MAKE) -C $(openmp) all
+	$(MAKE) -C $(code_wave2) all
 
 clean:
 	$(MAKE) -C $(code_wave1) clean
-	$(MAKE) -C $(openmp) clean
+	$(MAKE) -C $(code_wave2) clean
 
