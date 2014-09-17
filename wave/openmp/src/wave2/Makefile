@@ -11,7 +11,8 @@ IFLAGS = -O3 -unroll-aggressive -opt-prefetch -openmp
 all: wave2
 
 wave2: wave2.c
-	$(CC) $(FLAGS) $+ ${LM} -o $@
+	$(CC)  $(IFLAGS) $+ ${LM} -o $@.$(CC)
+	$(GCC)  $(GFLAGS) $+ ${LM} -o $@.$(GCC)
 
 clean:
-	rm wave2
+	rm wave2.* 
