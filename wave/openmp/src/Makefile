@@ -19,6 +19,6 @@ wave2s:
 	$(MAKE) -C $(code_wave2) all
 
 clean:
-	$(MAKE) -C $(code_wave1) clean
+#	$(MAKE) -C $(code_wave1) clean
 	$(MAKE) -C $(code_wave2) clean
 
