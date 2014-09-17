@@ -22,8 +22,8 @@ for comp in $@
 do
 	comp=${comp^}
 	if [ "$comp" = "Naive" ]; then {
-		count=$((count+4))
-		printf "\t $comp""1_gcc\t $comp""1_icc\t $comp""2_gcc\t $comp""2_icc" >> $FILE
+		count=$((count+2))
+		printf "\t $comp""2_gcc\t $comp""2_icc" >> $FILE
 	} elif [ "$comp" = "Pluto" ]; then {
 		count=$((count+2))
 		printf "\t $comp""_gcc\t $comp""_icc" >> $FILE
@@ -62,24 +62,6 @@ do
 							} else {
 								printf "%.6f", total/count
 							}
-						}' ./output-wave1-gcc-$i.out >> $FILE
-			printf "\t " >> $FILE
-			awk -F'   ' '/Performance/{total +=  $2; count++} 
-						END {
-							if (count == 0 ) {
-								printf "%.6f", 0
-							} else {
-								printf "%.6f", total/count
-							}
-						}' ./output-wave1-icc-$i.out >> $FILE
-			printf "\t " >> $FILE
-			awk -F'   ' '/Performance/{total +=  $2; count++} 
-						END {
-							if (count == 0 ) {
-								printf "%.6f", 0
-							} else {
-								printf "%.6f", total/count
-							}
 						}' ./output-wave2-gcc-$i.out >> $FILE
 			printf "\t " >> $FILE
 			awk -F'   ' '/Performance/{total +=  $2; count++} 
@@ -90,6 +72,7 @@ do
 								printf "%.6f", total/count
 							}
 						}' ./output-wave2-icc-$i.out >> $FILE
+			printf "\t " >> $FILE
 		} elif [ $comp = "pluto" ]; then {
 			awk -F'   ' '/Performance/{total +=  $2; count++} 
 						END {
