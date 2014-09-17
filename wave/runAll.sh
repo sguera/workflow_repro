@@ -95,7 +95,7 @@ where:
 #Handle call with no argument
 if [ "$#" == 0 ]; then
 	echo "$1"
-	set -- "$@" "naive pluto pochoir patus halide";
+	set -- "$@" "openmp pluto pochoir patus halide";
 fi
 
 #Handle the Arguments
