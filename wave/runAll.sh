@@ -5,7 +5,7 @@ set -e
 DIR=`pwd`
 fnCompileRunOpenmp(){
 	cd openmp/src
-	make openmp
+	make wave2s
 	cd ..
 	#create output folder
 	if [ -d "output" ]; then
