@@ -86,6 +86,6 @@ do
 done
 
 echo "CMD: $cmd with COMPILERS: $compilers"
-$cmd $compilers
+$cmd
 
 exit 1
