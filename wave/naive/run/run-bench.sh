@@ -1,5 +1,5 @@
 #!/bin/bash
-for prog in wave1
+for prog in wave2
 do
     echo "------------- $prog ------------"
     for compiler in gcc icc
