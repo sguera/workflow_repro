@@ -10,7 +10,7 @@ LM= -lm
 code_wave1=wave1
 code_wave2=wave2
 
-all: wave2s
+all: openmp
 
 wave1s:
 	$(MAKE) -C $(code_wave1) all
