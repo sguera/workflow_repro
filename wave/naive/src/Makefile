@@ -10,7 +10,7 @@ LM= -lm
 code_wave1=wave1
 code_wave2=wave2
 
-all: wave1s wave2s
+all: wave2s
 
 wave1s:
 	$(MAKE) -C $(code_wave1) all
