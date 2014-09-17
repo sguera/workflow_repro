@@ -76,7 +76,7 @@ source $INTEL_VARS $intel_arch
 compilers=""
 #Handle call with no argument
 if [ "$#" == 0 ]; then
-	set -- "$@" "naive pluto pochoir patus halide";
+	set -- "$@" "openmp pluto pochoir patus halide";
 fi
 
 for i in $@
@@ -86,6 +86,6 @@ do
 done
 
 echo "CMD: $cmd with COMPILERS: $compilers"
-$cmd
+$cmd $compilers
 
 exit 1
