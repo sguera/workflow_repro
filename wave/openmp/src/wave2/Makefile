@@ -15,4 +15,4 @@ wave2: wave2.c
 	$(GCC)  $(GFLAGS) $+ ${LM} -o $@.$(GCC)
 
 clean:
-	rm wave2.* 
+	rm wave2.icc wave2.gcc 
