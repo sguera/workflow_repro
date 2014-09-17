@@ -12,7 +12,7 @@ fi
 
 #Handle call with no argument
 if [ "$#" == 0 ]; then
-	set -- "$@" "naive pluto pochoir patus halide";
+	set -- "$@" "openmp pluto pochoir patus halide";
 fi
 
 # start table heading
@@ -21,9 +21,9 @@ printf "CPU" >$FILE
 for comp in $@
 do
 	comp=${comp^}
-	if [ "$comp" = "Naive" ]; then {
+	if [ "$comp" = "Openmp" ]; then {
 		count=$((count+2))
-		printf "\t $comp""2_gcc\t $comp""2_icc" >> $FILE
+		printf "\t $comp""_gcc\t $comp""_icc" >> $FILE
 	} elif [ "$comp" = "Pluto" ]; then {
 		count=$((count+2))
 		printf "\t $comp""_gcc\t $comp""_icc" >> $FILE
@@ -54,7 +54,7 @@ do
 	do
 		cd $comp/output/
 		printf "\t " >> $FILE
-		if [ $comp = "naive" ]; then {
+		if [ $comp = "openmp" ]; then {
 			awk -F'   ' '/Performance/{total +=  $2; count++} 
 						END {
 							if (count == 0 ) {
