@@ -16,7 +16,7 @@ wave1s:
 	$(MAKE) -C $(code_wave1) all
 
 wave2s: 
-	$(MAKE) -C $(oepnmp) all
+	$(MAKE) -C $(openmp) all
 
 clean:
 	$(MAKE) -C $(code_wave1) clean
