@@ -1,5 +1,21 @@
-installed and in PATH:
+Refer to the paper: "Reproducible Experiments in Parallel Computing: Concepts and Stencil Compiler Benchmark Study" published in the Springer LNCS "Euro-Par 2014: Parallel Processing Workshops"
+
+Required software (must be installed and in PATH):
 wget
 unzip
 ghc
 gmp
+
+        -------------------------------
+
+In order to run the workflow properly, please make sure to have installed the required dependencies, as stated in $WORKFLOW_HOME/manual/Manual.pdf
+
+After having installed those dependencies you are able to run it as follows:
+
+1) Place yourself in the $WORKFLOW_HOME
+2)Install the workflow with the following command:
+		./workflow.sh install all
+	This will install all of the available methods for the wave problem.
+3) Run the benchmarking with the following command:
+		nohup ./workflow.sh run all
+	The output of this, will be a png file with a graphical overview of the GFlops/s produced by each of the methods used for the wave stencil.
